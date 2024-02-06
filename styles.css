@@ -74,6 +74,9 @@ ul {
 .socials-link {
   text-decoration: none;
 }
+.socials-icon-bottom {
+  fill: var(--color-primary-white);
+}
 .margine-48-title {
   margin-bottom: 48px;
 }
@@ -119,6 +122,24 @@ ul {
   color: var(--color-primary-blue);
   background-color: transparent;
 }
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 32px;
+}
+.header-manu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
 /* Link */
 .link {
   color: var(--color-primary-black);
@@ -147,10 +168,12 @@ ul {
   font-weight: 700;
   width: 529px;
   line-height: 0.8;
+  margin: 0;
+  padding: 0 0 40px 0;
 }
 .hero-section {
   padding: 86px 0 270px 0;
-  background-image: url(../Beauty_zone/images/main-image.jpeg);
+  background-image: url(../images/main-image.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
