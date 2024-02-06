@@ -1,168 +1,222 @@
 @font-face {
-    font-display: swap;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Play';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
 }
 
 :root {
-    --color-primary-white: #FFFFFF;
-    --color-primary-blue: #2B7FFF;
-    --color-primary-black: #011C44;
-    --color-secondary-brown: #4A4A4A;
-    --color-secondary-grey: #747272;
-    --color-secondary-navy: #011F4A;
-    --color-secondary-yellow: #FFD02B;
+  --color-primary-white: #ffffff;
+  --color-primary-blue: #2b7fff;
+  --color-primary-black: #011c44;
+  --color-secondary-brown: #4a4a4a;
+  --color-secondary-grey: #747272;
+  --color-secondary-navy: #011f4a;
+  --color-secondary-yellow: #ffd02b;
 }
 /* Base */
 body {
-    color: var(--color-primary-black);
-    font-family: Roboto, sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.7;
+  color: var(--color-primary-black);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
 }
-address {font-style: normal;}
-ul {list-style-type: none;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+address {
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+}
+.socials-link {
+  text-decoration: none;
+}
+.margine-48-title {
+  margin-bottom: 48px;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 /* Button */
 .button-top {
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-primary-white);
-    line-height: 1.2;
-    background-color: var(--color-primary-blue);
-    border: 2px solid var(--color-primary-blue);
-    border-radius: 32px;
-    cursor: pointer;
-    width: 219px;
-    height: 53px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-white);
+  line-height: 1.2;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  width: 219px;
+  height: 53px;
 }
 .button-top:hover {
-    color: var(--color-primary-blue);
-    background-color: transparent;
+  color: var(--color-primary-blue);
+  background-color: transparent;
 }
 .button-bottom {
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-primary-white);
-    line-height: 1.2;
-    background-color: var(--color-primary-blue);
-    border: 2px solid var(--color-primary-blue);
-    border-radius: 32px;
-    cursor: pointer;
-    width: 281px;
-    height: 53px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-white);
+  line-height: 1.2;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  width: 281px;
+  height: 53px;
 }
 
 .button-bottom:hover {
-    color: var(--color-primary-blue);
-    background-color: transparent;
+  color: var(--color-primary-blue);
+  background-color: transparent;
 }
 /* Link */
 .link {
-    color: var(--color-primary-black);
-    font-size: 18px;
-    text-decoration: none;
+  color: var(--color-primary-black);
+  font-size: 18px;
+  text-decoration: none;
 }
 .link:hover {
-    color: var(--color-primary-blue);
-    font-weight: 700;    
+  color: var(--color-primary-blue);
+  font-weight: 700;
 }
-/* Title section*/
+/* Hero section*/
 .before-title {
-    font-size: 18px;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 .after-title {
-    font-size: 12px;
-    line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 14px;
 }
 .hero-title {
-    color: var(--color-primary-blue);
-    font-family: Play, sans-serif;
-    text-align: left;
-    font-size: 140px;
-    font-weight: 700;
+  color: var(--color-primary-blue);
+  font-family: Play, sans-serif;
+  text-align: left;
+  font-size: 140px;
+  font-weight: 700;
+  width: 529px;
+  line-height: 0.8;
+}
+.hero-section {
+  padding: 86px 0 270px 0;
+  background-image: url(../Beauty_zone/images/main-image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* Section 2*/
 .section-title {
-    color: var(--color-primary-black);
-    font-family: Play, sans-serif;
-    font-size: 64px;
-    font-weight: 700;
+  color: var(--color-primary-black);
+  font-family: Play, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+.section-about-us {
+  margin-bottom: 40px;
+}
+.sec-about-title {
+  width: 529px;
+  line-height: 1.1;
 }
 .accent {
-    color: var(--color-primary-blue);
+  color: var(--color-primary-blue);
 }
 .accent1 {
-    font-weight: 600;
+  font-weight: 600;
 }
 /* Section 3*/
 .why-choose-us {
-    font-size: 18px;
-    line-height: 1.3;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.why-us-icons {
+  width: 40px;
+  height: 44px;
+}
+.section-why-us {
+  width: 432px;
+  line-height: 1.1;
 }
 /* Section 4 */
 .procedures-description {
-    line-height: 1.2;
-    color: var(--color-primary-white);
+  line-height: 1.2;
+  color: var(--color-primary-white);
 }
 /* Section 5*/
 .get-in-touch {
-    font-weight: 600;
+  font-weight: 600;
+  margin-bottom: 32px;
 }
 .get-in-touch-bottom {
-    font-size: 12px;
-    color: var(--color-secondary-grey);
+  font-size: 12px;
+  color: var(--color-secondary-grey);
+  margin-bottom: 8px;
 }
 .privacy-policy {
-    text-decoration: underline;
-    color: var(--color-secondary-grey);
+  text-decoration: underline;
+  color: var(--color-secondary-grey);
 }
 .footer {
-    background-color: var(--color-secondary-navy);
-    color: var(--color-primary-white);
-    font-size: 16px;
-    line-height: 1.2;
+  background-color: var(--color-secondary-navy);
+  color: var(--color-primary-white);
+  font-size: 16px;
+  line-height: 1.2;
 }
 .footer-link {
-    color: var(--color-primary-white);
-    text-decoration: none;
+  color: var(--color-primary-white);
+  text-decoration: none;
 }
 .footer-link:hover {
-    color: var(--color-primary-blue);
+  color: var(--color-primary-blue);
 }
