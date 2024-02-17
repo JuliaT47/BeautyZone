@@ -316,7 +316,7 @@ a {
 /* Procedures section */
 .procedures-description {
   line-height: 1.2;
-  color: /*var(--color-primary-white)*/ ;
+  /*color: var(--color-primary-white);*/
 }
 .procedures-container {
   display: flex;
