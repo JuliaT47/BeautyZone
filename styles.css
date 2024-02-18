@@ -198,21 +198,26 @@ a {
 .section-title.centered {
   text-align: center;
   margin-bottom: 48px;
-  margin-top: 96px;
+}
+.section-title.no-line-height {
+  line-height: 0;
+  margin-bottom: 85px;
+}
+.sec-about-title {
+  line-height: 1.2;
+  max-width: 500px;
 }
 .about-us-container {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  padding-bottom: 120px;
 }
 .about-us-content {
-  max-width: 710px;
+  max-width: 650px;
 }
 .section-about-us {
   margin-bottom: 40px;
-}
-.section-about-us.margin {
-  margin-bottom: 279px;
 }
 .why-us-title {
   width: 529px;
@@ -282,13 +287,14 @@ a {
   line-height: 1.3;
   text-align: center;
 }
-.why-us-container {
-  background: linear-gradient(
-    36.53deg,
-    rgba(43, 127, 255, 0.2) 39.745%,
-    rgba(43, 127, 255, 0) 54.155%,
-    rgba(43, 127, 255, 0) 66.656%
-  );
+.container.wave {
+  padding-top: 170px;
+  padding-bottom: 133px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/background-wave.png);
+  background-position: center top;
+  background-size: 150%;
 }
 .why-us-card {
   height: 181px;
@@ -322,11 +328,11 @@ a {
   display: flex;
   gap: 32px;
   align-items: center;
+  padding-bottom: 96px;
 }
 .procedures-card {
   padding: 0 77px 0 115px;
   background-image: linear-gradient(
-    180deg,
     rgba(1, 28, 68, 0) 48.529%,
     rgba(1, 28, 68, 0.73) 84.641%,
     rgb(1, 28, 68) 101.43%
