@@ -211,7 +211,7 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 .about-us-content {
   max-width: 650px;
@@ -222,7 +222,7 @@ a {
 .why-us-title {
   width: 529px;
   line-height: 1.1;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .accent {
   color: var(--color-primary-blue);
