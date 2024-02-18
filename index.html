@@ -51,19 +51,20 @@
     </header>
     <main>
       <!-- main page -->
-      <section class="hero-section">
-        <div class="container">
+      <div class="container">
+        <section class="hero-section">
           <p class="before-title">Косметологічна клініка</p>
           <h1 class="hero-title">Beauty Zone</h1>
-          <button class="button-top" type="button">Замовити дзвінок</button>
+          <button class="button-top modal-button-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="after-title">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
-          <!--<img src="./images/main-image.jpeg" alt="A worker and a customer" />-->
-        </div>
-      </section>
+        </section>
+      </div>
       <section id="about_us">
-        <div class="container">
+        <div class="container about">
           <div class="about-us-container">
             <div class="about-us-content">
               <h2 class="section-title section-about-us sec-about-title">
@@ -313,5 +314,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-button-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
