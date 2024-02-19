@@ -241,6 +241,8 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ваше ім'я та прізвище"
+                    required
+                    pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                   />
                 </div>
                 <div class="form-field">
@@ -252,7 +254,9 @@
                     type="tel"
                     id="user-tel"
                     name="user-tel"
-                    placeholder="Ваша електронна пошта"
+                    placeholder="Ваш номер телефону"
+                    required
+                    pattern="^\+[0-9]{12}"
                   />
                 </div>
                 <div class="form-field">
@@ -265,6 +269,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Ваша електронна пошта"
+                    required
                   />
                 </div>
                 <button class="button-bottom form" type="submit">
@@ -380,6 +385,7 @@
               name="user-name"
               placeholder="Ваше ім'я та прізвище"
               required
+              pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
             />
           </div>
           <div class="form-field">
@@ -391,8 +397,9 @@
               type="tel"
               id="user-tel"
               name="user-tel"
-              placeholder="Ваша електронна пошта"
+              placeholder="Ваш номер телефону"
               required
+              pattern="^\+[0-9]{12}"
             />
           </div>
           <div class="form-field">
