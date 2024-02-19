@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles-->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -224,12 +230,7 @@
                   отримайте подарунок
                 </p>
               </div>
-              <form
-                class="contact-form"
-                name="contact-form"
-                autocomplete="off"
-                novalidate
-              >
+              <form class="contact-form" name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
                     >Ваше ім'я та прізвище</label
@@ -367,12 +368,7 @@
             подарунок
           </p>
         </div>
-        <form
-          class="contact-form"
-          name="modal-form"
-          autocomplete="off"
-          novalidate
-        >
+        <form class="contact-form" name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ваше ім'я та прізвище</label
@@ -383,6 +379,7 @@
               id="user-name"
               name="user-name"
               placeholder="Ваше ім'я та прізвище"
+              required
             />
           </div>
           <div class="form-field">
@@ -395,6 +392,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
           <div class="form-field">
@@ -407,6 +405,7 @@
               id="user-email"
               name="user-email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
 
