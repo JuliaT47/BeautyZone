@@ -1,0 +1,17 @@
+.link {
+  color: var(--color-primary-black);
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s, font-size 0.2s;
+}
+.link:hover {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+}
+.socials-link {
+  text-decoration: none;
+  transition: fill 0.2s;
+}
+.socials-link:hover {
+  fill: var(--color-primary-white);
+}

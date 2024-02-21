@@ -1,0 +1,38 @@
+/* Button */
+.button-top {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-white);
+  line-height: 1.2;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  width: 219px;
+  height: 53px;
+  transition: color 0.2s, background-color 0.2s;
+}
+.button-top:hover {
+  color: var(--color-primary-black);
+  background-color: transparent;
+}
+.button-bottom {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-white);
+  line-height: 1.2;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  width: 281px;
+  height: 53px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.button-bottom:hover {
+  color: var(--color-primary-black);
+  background-color: transparent;
+}

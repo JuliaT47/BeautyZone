@@ -1,0 +1,29 @@
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  padding: 32px;
+}
+.container.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 32px;
+}
+.header-manu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}

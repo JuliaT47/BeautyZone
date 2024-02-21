@@ -1,0 +1,44 @@
+/*Modal Window*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  transition: opacity 0.2s, visibility 0.2s; /*opacity corresponds to 
+  opening of the window, and visibility to closing*/
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 700px;
+  background-color: var(--color-primary-black);
+  border-radius: 48px;
+  padding: 42px 144px;
+  overflow-y: auto;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-button-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary-white);
+  font-size: 32px;
+  transition: transform 0.2s;
+}
+.modal-button-close:hover {
+  color: var(--color-primary-blue);
+}
