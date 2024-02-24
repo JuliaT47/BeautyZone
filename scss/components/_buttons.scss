@@ -1,5 +1,5 @@
 /* Button */
-.button-top {
+.button {
   font-family: Roboto, sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -9,30 +9,29 @@
   border: 2px solid var(--color-primary-blue);
   border-radius: 32px;
   cursor: pointer;
-  width: 219px;
   height: 53px;
   transition: color 0.2s, background-color 0.2s;
+  &:hover {
+    color: var(--color-primary-black);
+    background-color: transparent;
+  }
 }
-.button-top:hover {
-  color: var(--color-primary-black);
-  background-color: transparent;
-}
-.button-bottom {
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--color-primary-white);
-  line-height: 1.2;
-  background-color: var(--color-primary-blue);
-  border: 2px solid var(--color-primary-blue);
-  border-radius: 32px;
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primary-white);
   cursor: pointer;
-  width: 281px;
-  height: 53px;
-  transition: color 0.2s, background-color 0.2s;
-}
+  border-radius: 50%;
+  fill: var(--color-primary-black);
+  border-color: var(--color-primary-black);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
-.button-bottom:hover {
-  color: var(--color-primary-black);
-  background-color: transparent;
+  &:hover {
+    fill: var(--color-primary-white);
+    background-color: var(--color-primary-blue);
+    border-color: var(--color-primary-blue);
+  }
 }

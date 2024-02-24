@@ -1,20 +1,25 @@
 /* Contacts section */
-.contact-container {
+.contact-section {
   display: flex;
   gap: 32px;
   margin-bottom: 96px;
   justify-content: center;
-}
-.contact-map {
-  flex: none;
-  flex-shrink: 0;
-  border: none;
-  border-radius: 32px;
-  width: 605px;
-  height: 550px;
-}
-.modal.contact {
-  width: 425px;
-  height: 550px;
-  padding: 48px 56px;
+
+  &__map {
+    flex: none;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 32px;
+    width: 605px;
+    height: 550px;
+  }
+  &__form {
+    width: 425px;
+    height: 550px;
+    padding: 48px 56px;
+    position: relative;
+    background-color: var(--color-primary-black);
+    border-radius: 48px;
+    overflow-y: auto;
+  }
 }

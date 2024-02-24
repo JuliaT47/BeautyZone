@@ -12,6 +12,12 @@
   padding: 20px 0;
   transition: opacity 0.2s, visibility 0.2s; /*opacity corresponds to 
   opening of the window, and visibility to closing*/
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .modal {
   position: relative;
@@ -23,22 +29,27 @@
   border-radius: 48px;
   padding: 42px 144px;
   overflow-y: auto;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.modal-button-close {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  background-color: transparent;
-  border: none;
-  color: var(--color-primary-white);
-  font-size: 32px;
-  transition: transform 0.2s;
-}
-.modal-button-close:hover {
-  color: var(--color-primary-blue);
+
+  &__header {
+    color: var(--color-primary-white);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__button-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-primary-white);
+    font-size: 32px;
+    transition: transform 0.2s;
+  }
+  &__button-close:hover {
+    color: var(--color-primary-blue);
+  }
 }

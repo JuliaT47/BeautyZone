@@ -1,0 +1,14 @@
+.form-policy {
+  color: var(--color-secondary-grey);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 250px;
+  margin-top: 8px;
+
+  &__link {
+    color: var(--color-secondary-grey);
+  }
+}

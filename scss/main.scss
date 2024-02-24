@@ -6,11 +6,15 @@
 
 @import "./utils/utils";
 
+@import "./utils/text";
+
 @import "./components/buttons";
 
 @import "./components/header";
 
 @import "./components/links";
+
+@import "./components/sections";
 
 @import "./components/hero-section";
 
@@ -21,6 +25,8 @@
 @import "./components/procedures-section";
 
 @import "./components/contacts-section";
+
+@import "./components/policy";
 
 @import "./components/footer";
 
