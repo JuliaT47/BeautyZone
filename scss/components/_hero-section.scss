@@ -11,13 +11,18 @@
   &__title {
     color: var(--color-primary-blue);
     font-family: Play, sans-serif;
-    text-align: left;
-    font-size: 140px;
+    text-align: center;
+    font-size: 54px;
     font-weight: 700;
     width: 529px;
     line-height: 0.8;
     margin: 0;
     padding: 0 0 40px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      text-align: left;
+    }
   }
   &__before-title {
     font-size: 18px;

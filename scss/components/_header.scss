@@ -4,10 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.25);
   display: flex;
   padding: 32px;
+
+  @media screen and (min-width: $bp-desktop) {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.25);
+  }
 
   &__container {
     display: flex;
@@ -20,11 +23,30 @@
     flex-grow: 1;
     gap: 32px;
   }
-  &__manu {
-    display: flex;
-    gap: 56px;
-    flex-grow: 1;
-    justify-content: center;
-    flex-wrap: wrap;
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  &__socials {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
+    display: block;
+    fill: var(--color-primary-white);
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
