@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
+  overflow-x: hidden;
   color: var(--color-primary-black);
   font-family: Roboto, sans-serif;
   font-size: 22px;
