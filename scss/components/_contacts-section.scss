@@ -2,24 +2,47 @@
 .contact-section {
   display: flex;
   gap: 32px;
-  margin-bottom: 96px;
   justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: $bp-tablet) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 96px;
+  }
 
   &__map {
     flex: none;
     flex-shrink: 0;
     border: none;
-    border-radius: 32px;
-    width: 605px;
-    height: 550px;
+    margin: 0 -24px;
+    height: 232px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 320px;
+      height: 550px;
+      margin: 0 24px;
+      border-radius: 32px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 605px;
+      height: 550px;
+    }
   }
   &__form {
+    order: -1;
     width: 425px;
     height: 550px;
     padding: 48px 56px;
+    margin: auto;
     position: relative;
     background-color: var(--color-primary-black);
     border-radius: 48px;
     overflow-y: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      order: 1;
+      margin: 0;
+    }
   }
 }

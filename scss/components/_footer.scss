@@ -22,13 +22,26 @@
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
   &__address,
   &__nav {
     display: flex;
+    flex-direction: column;
     flex-basis: 50%;
     gap: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
   }
   &__logo,
   &__menu {
@@ -43,9 +56,19 @@
   &__link:hover {
     color: var(--color-primary-blue);
   }
-  &__address-info,
+  &__address-info {
+    flex-grow: 1;
+  }
+
   &__address-list {
     flex-grow: 1;
+  }
+  &__address-link {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
   &__address-copyright {
     font-size: 13px;
@@ -54,6 +77,13 @@
   &__icons {
     fill: var(--color-primary-white);
     display: flex;
-    gap: 40px;
+    justify-content: center;
+    gap: 20px;
+    order: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: unset;
+      gap: 40px;
+    }
   }
 }

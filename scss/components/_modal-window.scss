@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px;
   transition: opacity 0.2s, visibility 0.2s; /*opacity corresponds to 
   opening of the window, and visibility to closing*/
 
@@ -27,7 +27,7 @@
   max-height: 700px;
   background-color: var(--color-primary-black);
   border-radius: 48px;
-  padding: 42px 144px;
+  padding: 42px 90px;
   overflow-y: auto;
 
   &__header {

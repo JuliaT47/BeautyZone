@@ -2,12 +2,21 @@
 .about-us-section {
   position: relative;
   height: 650px;
-  margin-top: 65px;
+  margin: 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin-top: 65px;
+  }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     gap: 40px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
   }
   &__content {
     max-width: 650px;
@@ -21,46 +30,70 @@
     font-weight: 600;
   }
   &__img1 {
-    position: absolute;
-    width: 270px;
-    border-radius: 50%;
-    overflow: hidden;
-    left: 55%;
-    top: -9%;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      width: 270px;
+      border-radius: 50%;
+      overflow: hidden;
+      left: 55%;
+      top: -9%;
+    }
   }
   &__img2 {
-    position: absolute;
-    width: 270px;
-    border-radius: 50%;
-    overflow: hidden;
-    left: 68%;
-    top: 40%;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      display: block;
+      width: 270px;
+      border-radius: 50%;
+      overflow: hidden;
+      left: 68%;
+      top: 40%;
+    }
   }
   &__star1 {
-    position: absolute;
+    position: relative;
     width: 60px;
     left: 62%;
     top: 35%;
     transition: transform 2s;
     animation: rotateStars 5s linear infinite;
+
+    @media screen and (min-width: $bp-desktop) {
+      position: absolute;
+    }
   }
   &__star2 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 90%;
-    top: -5%;
-    transition: transform 2s;
-    animation: rotateStars 5s linear infinite;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 90%;
+      top: -5%;
+      transition: transform 2s;
+      animation: rotateStars 5s linear infinite;
+    }
   }
   &__star3 {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    left: 87%;
-    top: 33%;
-    transition: transform 2s;
-    animation: rotateAndScaleStar3 5s linear infinite;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 87%;
+      top: 33%;
+      transition: transform 2s;
+      animation: rotateAndScaleStar3 5s linear infinite;
+    }
   }
   @keyframes rotateStars {
     from {

@@ -1,54 +1,58 @@
 /* Hero section*/
 .hero-section {
-  padding: 59px 0 166px 0;
+  padding: 50px 0 100px 0;
   background-image: url(../images/background_hero-section.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/background_hero-section@2x.jpeg);
   }
-}
-
-&__text {
-  text-align: center;
-
-  @media screen and (min-width: $bp-tablet) {
-    text-align: left;
-    padding: 16px 0 0 230px;
-  }
-}
-&__title {
-  color: var(--color-primary-blue);
-  font-family: Play, sans-serif;
-  font-size: 54px;
-  font-weight: 700;
-  width: 529px;
-  line-height: 0.8;
-  margin: 0 auto;
-  padding: 0 0 40px 0;
 
   @media screen and (min-width: $bp-desktop) {
-    font-size: 140px;
+    padding: 59px 0 166px 0;
   }
 
-  @media screen and (min-width: $bp-tablet) {
-    text-align: left;
-    margin: 0;
+  &__text {
+    text-align: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      padding: 16px 0 0 230px;
+    }
   }
-}
-&__before-title {
-  font-size: 18px;
-  margin: 30px 0 16px 10px;
-}
-&__after-title {
-  font-size: 12px;
-  line-height: 1.5;
-  margin: 14px 0 0 15px;
-}
-&__button {
-  width: 219px;
+  &__title {
+    color: var(--color-primary-blue);
+    font-family: Play, sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    width: 529px;
+    line-height: 0.8;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 140px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      margin: 0;
+    }
+  }
+  &__before-title {
+    font-size: 18px;
+    margin: 30px 0 16px 10px;
+  }
+  &__after-title {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 14px 0 0 15px;
+  }
+  &__button {
+    width: 219px;
+  }
 }

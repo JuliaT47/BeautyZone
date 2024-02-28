@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -84,7 +88,7 @@
           </p>
         </div>
       </section>
-      <!-- <section id="about_us">
+      <section id="about_us">
         <div class="container about-us-section">
           <div class="about-us-section__container">
             <div class="about-us-section__content">
@@ -189,53 +193,79 @@
           <h2 class="section-title text-centered procedures-section__title">
             Наші <span class="text-brand">процедури</span>
           </h2>
-          <div class="procedures-section__container">
-            <button class="slider" type="button">
+          <div class="procedures-section__slider">
+            <button
+              class="procedures-section__button procedures-section__slider-right slider prev"
+              type="button"
+            >
               <svg width="44" height="44">
                 <use
                   href="./images/icomoon/symbol-defs.svg#icon-arrow-left2"
                 ></use>
               </svg>
             </button>
-            <ul class="procedures-section__list">
-              <li class="procedures-section__item">
-                <article class="procedures-section__card">
-                  <img
-                    class="procedures-section__image"
-                    src="./images/procedures1.svg"
-                    alt="Woman with a face mask"
-                  />
-                  <p class="procedures-section__description">
-                    Маски для обличчя
-                  </p>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedures-section__card">
-                  <img
-                    class="procedures-section__image"
-                    src="./images/procedures2.svg"
-                    alt="Woman's face with a syringe"
-                  />
-                  <p class="procedures-section__description">
-                    Ін'єкції для обличчя
-                  </p>
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedures-section__card">
-                  <img
-                    class="procedures-section__image"
-                    src="./images/procedures3.svg"
-                    alt="Woman's face with a headband"
-                  />
-                  <p class="procedures-section__description">
-                    Очищення обличчя
-                  </p>
-                </article>
-              </li>
-            </ul>
-            <button class="slider" type="button">
+            <div class="procedures-section__container swiper-container">
+              <ul class="procedures-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedures-section__card">
+                    <img
+                      class="procedures-section__image"
+                      src="./images/procedures1.svg"
+                      alt="Woman with a face mask"
+                    />
+                    <p class="procedures-section__description">
+                      Маски для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-section__card">
+                    <img
+                      class="procedures-section__image"
+                      src="./images/procedures2.svg"
+                      alt="Woman's face with a syringe"
+                    />
+                    <p class="procedures-section__description">
+                      Ін'єкції для обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-section__card">
+                    <img
+                      class="procedures-section__image"
+                      src="./images/procedures3.svg"
+                      alt="Woman's face with a headband"
+                    />
+                    <p class="procedures-section__description">
+                      Очищення обличчя
+                    </p>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-section__card">
+                    <img
+                      class="procedures-section__image"
+                      src="./images/procedures1.svg"
+                      alt="Woman with a face mask"
+                    />
+                    <p class="procedures-section__description">
+                      Маски для обличчя
+                    </p>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button
+              class="procedures-section__button procedures-section__slider-left slider next"
+              type="button"
+            >
               <svg width="44" height="44">
                 <use
                   href="./images/icomoon/symbol-defs.svg#icon-arrow-right2"
@@ -254,8 +284,6 @@
             <iframe
               class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713457!2d30.515600376556794!3d50.44235657159072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2suk!4v1706739442470!5m2!1sen!2suk"
-              width="605"
-              height="481"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -348,57 +376,57 @@
           <address class="footer__address">
             <ul class="footer__address-list">
               <li>
-                <a class="footer__link" href="tel:+38960000007"
+                <a
+                  class="footer__link footer__address-link"
+                  href="tel:+38960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
               <li>
-                <a class="footer__link" href="mailto:beautyzone@gmail.com"
+                <a
+                  class="footer__link footer__address-link"
+                  href="mailto:beautyzone@gmail.com"
                   >beautyzone@gmail.com</a
                 >
               </li>
               <li>
                 <a
-                  class="footer__link"
+                  class="footer__link footer__address-link"
                   href="https://maps.app.goo.gl/s11rRat83dMzwLRK6"
                   target="_blank"
                   >Україна, м. Київ, вул. Тараса Шевченка 5</a
                 >
               </li>
               <div class="footer__icons">
-                <li>
-                  <a class="link__socials" href="tel:+38960000007">
-                    <svg class="footer__icons" width="32" height="32">
-                      <use href="./images/icons.svg#icon-Phone_icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="link__socials"
-                    href="https://en-gb.facebook.com"
-                    target="_blank"
-                  >
-                    <svg class="footer__icons" width="32" height="32">
-                      <use href="./images/icons.svg#icon-Facebook_icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="link__socials"
-                    href="https://www.instagram.com"
-                    target="_blank"
-                  >
-                    <svg class="footer__icons" width="32" height="32">
-                      <use href="./images/icons.svg#icon-Insta-icon"></use>
-                    </svg>
-                  </a>
-                </li>
+                <a class="link__socials" href="tel:+38960000007">
+                  <svg class="footer__icons" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Phone_icon"></use>
+                  </svg>
+                </a>
+                <a
+                  class="link__socials"
+                  href="https://en-gb.facebook.com"
+                  target="_blank"
+                >
+                  <svg class="footer__icons" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Facebook_icon"></use>
+                  </svg>
+                </a>
+                <a
+                  class="link__socials"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                >
+                  <svg class="footer__icons" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Insta-icon"></use>
+                  </svg>
+                </a>
               </div>
             </ul>
             <div class="footer__address-info">
-              <a class="footer__link" href="#">Політика конфіденційності</a>
+              <a class="footer__link footer_link-policy" href="#"
+                >Політика конфіденційності</a
+              >
               <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
             </div>
           </address>
@@ -471,7 +499,9 @@
           </p>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>

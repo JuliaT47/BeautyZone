@@ -1,6 +1,11 @@
 .section-title {
   color: var(--color-primary-black);
   font-family: Play, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 500;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-size: 64px;
+    font-weight: 700;
+  }
 }
