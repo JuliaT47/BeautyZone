@@ -8,10 +8,33 @@
   transform: translate(100%);
   transition: transform 0.3s;
 
+  & img {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 16px 20px;
+  }
+
   &.is-open {
     transform: translate(0);
   }
 
+  &__menu {
+  }
+  &__menu li a {
+    min-width: 150px;
+    display: block;
+    margin: 16px 20px;
+  }
+  &__socials {
+    display: flex;
+    gap: 28px;
+    margin-left: 20px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
   &__button-close {
     position: absolute;
     top: 16px;

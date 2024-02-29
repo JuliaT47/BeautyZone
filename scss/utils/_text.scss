@@ -3,5 +3,9 @@
 }
 .text-centered {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 48px;
+  }
 }

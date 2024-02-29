@@ -6,12 +6,6 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/background_hero-section@2x.jpeg);
-  }
-
   @media screen and (min-width: $bp-desktop) {
     padding: 59px 0 166px 0;
   }
