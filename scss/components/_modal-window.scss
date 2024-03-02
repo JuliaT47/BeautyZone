@@ -12,6 +12,7 @@
   padding: 20px;
   transition: opacity 0.2s, visibility 0.2s; /*opacity corresponds to 
   opening of the window, and visibility to closing*/
+  z-index: 1;
 
   &.is-hidden {
     opacity: 0;

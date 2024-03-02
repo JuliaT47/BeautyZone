@@ -7,7 +7,7 @@
   line-height: 1.2;
   padding: 56px 0;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
 
   @media screen and (min-width: $bp-tablet) {
     font-size: 16px;
